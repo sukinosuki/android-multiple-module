@@ -1,0 +1,21 @@
+//plugins {
+////    id 'com.android.application'
+//    id 'org.jetbrains.kotlin.android'
+//}
+apply from: '../app.gradle'
+
+android {
+    namespace 'com.example.video'
+    defaultConfig {
+
+        if (!isRelease) {
+            applicationId "com.example.video"
+            versionCode 1
+            versionName "1.0"
+        }
+    }
+}
+
+dependencies {
+
+}

@@ -1,0 +1,23 @@
+//plugins {
+////    id 'com.android.application'
+//    id 'org.jetbrains.kotlin.android'
+//}
+apply from: '../app.gradle'
+
+android {
+    namespace 'com.example.app_setting'
+//    resourcePrefix 'setting_'
+
+    defaultConfig {
+
+        if (!isRelease) {
+            applicationId "com.example.app_setting"
+            versionCode 1
+            versionName "1.0"
+        }
+    }
+}
+
+dependencies {
+
+}

@@ -1,0 +1,55 @@
+//plugins {
+////    id 'com.android.application'
+//    id 'org.jetbrains.kotlin.android'
+//}
+apply from: '../app.gradle'
+
+plugins.apply('org.jetbrains.kotlin.android')
+// isRelease是env.gradle定义的变量. 在总项目下的build.gradle里声明apply来应用
+if (isRelease) {
+    plugins.apply('com.android.library')
+} else {
+    plugins.apply('com.android.application')
+}
+
+android {
+    namespace 'com.example.app_setting'
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 23
+        targetSdk 33
+
+        if (!isRelease) {
+            applicationId "com.example.app_setting"
+            versionCode 1
+            versionName "1.0"
+        }
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation androidx.ktx //'androidx.core:core-ktx:1.8.0'
+    implementation androidx.appcompat //'androidx.appcompat:appcompat:1.4.1'
+    implementation androidx.material //'com.google.android.material:material:1.5.0'
+    implementation androidx.constraintlayout //'androidx.constraintlayout:constraintlayout:2.1.3'
+    testImplementation test.junit // 'junit:junit:4.13.2'
+    androidTestImplementation test.junit_android //'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation test.espresso //'androidx.test.espresso:espresso-core:3.4.0'
+}
