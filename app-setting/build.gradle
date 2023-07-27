@@ -2,7 +2,9 @@
 ////    id 'com.android.application'
 //    id 'org.jetbrains.kotlin.android'
 //}
+
 apply from: '../app.gradle'
+apply from: '../dependencies.gradle'
 
 android {
     namespace 'com.example.app_setting'

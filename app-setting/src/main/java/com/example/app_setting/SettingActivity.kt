@@ -7,6 +7,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.app_setting.databinding.ActivitySettingBinding
 import com.example.core.ActivityUtil
 import com.example.core.BaseActivity
+import com.example.core.BuildConfig
 import com.example.core.env.Env
 import com.example.core.viewmodel.BaseApplication
 import com.example.core.viewmodel.CoreViewModel
@@ -39,8 +40,8 @@ class SettingActivity : BaseActivity() {
 //        Log.i("hanami", "env: ${BuildConfig.ENV}")
         Log.i("hanami", "debug: ${BuildConfig.DEBUG}")
         Log.i("hanami", "build type: ${BuildConfig.BUILD_TYPE}")
-        Log.i("hanami", "version code: ${BuildConfig.VERSION_CODE}")
-        Log.i("hanami", "version name: ${BuildConfig.VERSION_NAME}")
+//        Log.i("hanami", "version code: ${BuildConfig.VERSION_CODE}")
+//        Log.i("hanami", "version name: ${BuildConfig.VERSION_NAME}")
 //
 //        binding.text.text = BuildConfig.ENV
 
