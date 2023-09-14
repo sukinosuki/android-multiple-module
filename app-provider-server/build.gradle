@@ -1,0 +1,27 @@
+//plugins {
+////    id 'com.android.application'
+//    id 'org.jetbrains.kotlin.android'
+//}
+
+apply from: '../app.gradle'
+apply from: '../dependencies.gradle'
+
+//plugins {
+//    id 'org.jetbrains.kotlin.android'
+//}
+
+android {
+    namespace 'com.example.app_provider_server'
+    defaultConfig {
+
+        if (!isRelease) {
+            applicationId "com.example.app_provider_server"
+            versionCode 1
+            versionName "1.0"
+        }
+    }
+}
+
+dependencies {
+
+}

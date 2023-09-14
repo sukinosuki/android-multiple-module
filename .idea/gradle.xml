@@ -10,7 +10,11 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/app-paging3-demo" />
+            <option value="$PROJECT_DIR$/app-request-permission" />
+            <option value="$PROJECT_DIR$/app-room-demo" />
             <option value="$PROJECT_DIR$/app-setting" />
+            <option value="$PROJECT_DIR$/app-smart-refresh" />
             <option value="$PROJECT_DIR$/app-video" />
             <option value="$PROJECT_DIR$/core" />
           </set>

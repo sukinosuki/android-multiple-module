@@ -12,8 +12,14 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+
 rootProject.name = "multi-modules-app"
 include ':app'
 include ':app-setting'
 include ':app-video'
 include ':core'
+include ':app-paging3-demo'
+include ':app-room-demo'
+include ':app-smart-refresh'
+include ':app-request-permission'
+include ':shared-element'

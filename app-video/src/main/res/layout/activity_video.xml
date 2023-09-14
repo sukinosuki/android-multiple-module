@@ -11,35 +11,40 @@
     </data>
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".VideoActivity">
 
         <TextView
+            android:id="@+id/text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Video page"
-            android:id="@+id/text_view"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <FrameLayout
-            android:background="@drawable/rect"
             android:layout_width="100dp"
-            android:layout_height="100dp" />
+            android:layout_height="100dp"
+            android:background="@drawable/rect" />
 
         <Button
             android:id="@+id/change_name_btn"
-            android:text="change name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_selected_background"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="change name"
+            android:textColor="@color/white" />
+
+        <TextView
             android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -48,53 +53,97 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <TextView
-                android:text="count: "
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="count: " />
+
             <TextView
                 android:id="@+id/count"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
 
         <Button
-            android:text="to setting page"
             android:id="@+id/to_setting_page_button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="to setting page" />
 
         <Button
             android:id="@+id/add_count_button"
-            android:text="add count"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="add count" />
+
         <TextView
             android:id="@+id/count_text"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
         <LinearLayout
-            app:goneUnless="@{vm.visible}"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:goneUnless="@{vm.visible}">
+
             <Button
-                android:text="add counter"
                 android:id="@+id/add_counter_button"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="add counter" />
+
             <TextView
                 android:id="@+id/counter_text"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
             <TextView
-                app:format-gender="@{1}"
-                tools:text="Male(tools)"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                app:format-gender="@{1}"
+                tools:text="Male(tools)" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/read_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="read" />
+
+            <Button
+                android:id="@+id/write_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="write" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/write_picture_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="write picture" />
+
+            <Button
+                android:id="@+id/read_picture_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="read picture" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
 </layout>

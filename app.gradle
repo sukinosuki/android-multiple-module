@@ -2,16 +2,21 @@
 ////    id 'com.android.application'
 //    id 'org.jetbrains.kotlin.android'
 //}
-plugins.apply('org.jetbrains.kotlin.android')
-plugins.apply('kotlin-kapt')
-
+//plugins{
+//    id 'com.google.devtools.ksp' version '1.8.0-1.0.8'
+//}
+//plugins {
+//    id("com.google.devtools.ksp")
+//}
 // isRelease是env.gradle定义的变量. 在总项目下的build.gradle里声明apply来应用
 if (isRelease) {
     plugins.apply('com.android.library')
 } else {
     plugins.apply('com.android.application')
 }
-
+plugins.apply('org.jetbrains.kotlin.android')
+plugins.apply('kotlin-kapt')
+plugins.apply('com.google.devtools.ksp')
 
 android {
 //    namespace 'com.example.app_setting'
@@ -72,7 +77,7 @@ android {
             if (isRelease) {
                 manifest.srcFile 'src/main/AndroidManifest.xml'
                 java.exclude '**/debug/**'// 过滤debug目录
-            // 指定debug环境文件
+                // 指定debug环境文件
             } else {
                 manifest.srcFile 'src/main/AndroidManifestDebug.xml'
             }
@@ -83,6 +88,8 @@ android {
         dataBinding true
 //        buildConfig true
     }
+
+
 }
 
 dependencies {
@@ -105,5 +112,12 @@ dependencies {
 //    implementation androidx.datastorePreferences
 //
 
+//    kapt "androidx.room:room-compiler:2.5.2"
+    ksp "androidx.room:room-compiler:2.5.2" // https://developer.android.com/build/migrate-to-ksp
+
     implementation project(':core')
 }
+
+
+
+

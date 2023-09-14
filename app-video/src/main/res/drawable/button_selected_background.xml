@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--    按钮被点击时 -->
+    <item android:drawable="@drawable/button_pressed_bg" android:state_pressed="true" />
+    <!--    按钮可用且未被点击时 -->
+    <item android:drawable="@color/teal_200" android:state_enabled="true" />
+    <!--    按钮不可用时 -->
+    <item android:drawable="@drawable/button_unpressed_bg" />
+</selector>

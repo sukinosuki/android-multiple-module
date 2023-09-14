@@ -18,6 +18,60 @@
           <timeTargetWasSelectedWithDropDown value="2023-07-26T09:06:23.956787400Z" />
         </State>
       </entry>
+      <entry key="app-paging3-demo">
+        <State>
+          <runningDeviceTargetSelectedWithDropDown>
+            <Target>
+              <type value="RUNNING_DEVICE_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="SERIAL_NUMBER" />
+                  <value value="emulator-5554" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </runningDeviceTargetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2023-08-01T10:21:06.446846200Z" />
+        </State>
+      </entry>
+      <entry key="app-provider-client">
+        <State>
+          <runningDeviceTargetSelectedWithDropDown>
+            <Target>
+              <type value="RUNNING_DEVICE_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="SERIAL_NUMBER" />
+                  <value value="emulator-5554" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </runningDeviceTargetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2023-08-05T02:38:23.837877Z" />
+        </State>
+      </entry>
+      <entry key="app-provider-server">
+        <State />
+      </entry>
+      <entry key="app-request-permission">
+        <State />
+      </entry>
+      <entry key="app-room-demo">
+        <State>
+          <runningDeviceTargetSelectedWithDropDown>
+            <Target>
+              <type value="RUNNING_DEVICE_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="SERIAL_NUMBER" />
+                  <value value="emulator-5554" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </runningDeviceTargetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2023-07-27T09:06:28.658315100Z" />
+        </State>
+      </entry>
       <entry key="app-setting">
         <State>
           <runningDeviceTargetSelectedWithDropDown>
@@ -37,6 +91,22 @@
       <entry key="app-setting-prod">
         <State />
       </entry>
+      <entry key="app-smart-refresh">
+        <State>
+          <runningDeviceTargetSelectedWithDropDown>
+            <Target>
+              <type value="RUNNING_DEVICE_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="SERIAL_NUMBER" />
+                  <value value="emulator-5554" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </runningDeviceTargetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2023-08-01T10:18:33.816485800Z" />
+        </State>
+      </entry>
       <entry key="app-video">
         <State>
           <runningDeviceTargetSelectedWithDropDown>
@@ -50,7 +120,7 @@
               </deviceKey>
             </Target>
           </runningDeviceTargetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2023-07-26T08:06:24.031987800Z" />
+          <timeTargetWasSelectedWithDropDown value="2023-08-05T02:37:18.478013800Z" />
         </State>
       </entry>
     </value>

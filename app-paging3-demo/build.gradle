@@ -1,0 +1,18 @@
+apply from: '../app.gradle'
+apply from: '../dependencies.gradle'
+
+android {
+    namespace 'com.example.app_paging3_demo'
+    defaultConfig {
+
+        if (!isRelease) {
+            applicationId "com.example.app_paging3_demo"
+            versionCode 1
+            versionName "1.0"
+        }
+    }
+}
+
+dependencies {
+
+}

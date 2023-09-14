@@ -1,0 +1,23 @@
+//plugins {
+////    id 'com.android.application'
+//    id 'org.jetbrains.kotlin.android'
+//}
+
+apply from: '../app.gradle'
+apply from: '../dependencies.gradle'
+
+android {
+    namespace 'com.example.app_request_permission'
+    defaultConfig {
+
+        if (!isRelease) {
+            applicationId "com.example.app_request_permission"
+            versionCode 1
+            versionName "1.0"
+        }
+    }
+}
+
+dependencies {
+
+}
