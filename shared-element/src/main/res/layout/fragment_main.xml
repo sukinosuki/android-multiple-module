@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#2196F3"
+        android:background="@color/blue"
         android:gravity="center">
 
         <ImageView
@@ -17,7 +17,6 @@
             android:layout_width="150dp"
             android:layout_height="300dp"
             android:scaleType="centerCrop"
-            android:transitionName="transitionName"
             app:srcCompat="@drawable/shiroko" />
 
         <ImageView
@@ -26,7 +25,6 @@
             android:layout_height="300dp"
             android:layout_marginLeft="20dp"
             android:scaleType="centerCrop"
-            android:transitionName="transitionName2"
             android:src="@drawable/shiroko2" />
     </LinearLayout>
 </layout>

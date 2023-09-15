@@ -7,13 +7,15 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.example.shared_element.MainFragment"
-        android:label="MainFragment" >
+        android:label="MainFragment">
         <action
             android:id="@+id/action_mainFragment_to_imageFragment"
-            app:destination="@id/imageFragment" />
+            app:destination="@id/imageFragment"
+            app:popExitAnim="@anim/nav_out"
+            app:enterAnim="@anim/nav_in" />
     </fragment>
     <fragment
         android:id="@+id/imageFragment"
         android:name="com.example.shared_element.ImageFragment"
-        android:label="ImageFragment" />
+        android:label="ImageFragment"/>
 </navigation>

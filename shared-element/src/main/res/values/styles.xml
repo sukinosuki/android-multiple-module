@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="Toolbar">
+        
+<!--        <item name="android:textColorSecondary">@color/white</item>-->
+        <item name="navigationIconTint">@color/white</item>
+    </style>
+</resources>

@@ -17,6 +17,7 @@
             <option value="$PROJECT_DIR$/app-smart-refresh" />
             <option value="$PROJECT_DIR$/app-video" />
             <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/shared-element" />
           </set>
         </option>
       </GradleProjectSettings>

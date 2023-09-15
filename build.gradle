@@ -3,7 +3,9 @@
 // 使用navigation
 // https://stackoverflow.com/questions/71387746/plugin-with-id-androidx-navigation-safeargs-not-found-in-new-version-android
 buildscript {
-
+    repositories {
+        google()
+    }
     dependencies {
         classpath("androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3")
     }

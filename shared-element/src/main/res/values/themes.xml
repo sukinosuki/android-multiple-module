@@ -3,7 +3,32 @@
     <style name="Base.Theme.Multimodulesapp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+<!--        <item name="windowNoTitle">true</item>-->
+<!--        <item name="windowActionBar">false</item>-->
+
+<!--        <item name="android:statusBarColor">#000000</item>-->
+<!--        <item name="android:windowLightStatusBar">true</item>-->
+
+<!--        <item name="android:windowFullscreen">true</item>-->
+
+        <item name="android:windowTranslucentStatus">true</item>
+
     </style>
 
     <style name="Theme.Multimodulesapp" parent="Base.Theme.Multimodulesapp" />
+
+    <style name="Theme.FullScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!--        status文字为light下的颜色-->
+        <!--        <item name="android:windowLightStatusBar">true</item>-->
+        <!--        忽略status bar高度-->
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--        <item name="android:windowNoTitle">true</item>-->
+        <!--        <item name="android:windowActionBar">false</item>-->
+        <!--        <item name="android:windowFullscreen">true</item>-->
+        <!--        <item name="android:windowContentOverlay">@null</item>-->
+        <!--        <item name="android:windowTranslucentNavigation">false</item>-->
+        <!-- Customize your theme here. -->
+    </style>
+
 </resources>
