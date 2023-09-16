@@ -18,6 +18,8 @@
             <option value="$PROJECT_DIR$/app-video" />
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/shared-element" />
+            <option value="$PROJECT_DIR$/widget-group" />
+            <option value="$PROJECT_DIR$/work-manager" />
           </set>
         </option>
       </GradleProjectSettings>
